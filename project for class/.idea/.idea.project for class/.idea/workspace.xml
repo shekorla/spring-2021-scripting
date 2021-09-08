@@ -4,9 +4,6 @@
     <list default="true" id="e8172fc0-d936-4b2b-a35f-eb50845268b0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.project for class/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.project for class/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Lv1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Lv1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +63,7 @@
       <workItem from="1629911647644" duration="5000" />
       <workItem from="1630515014939" duration="2051000" />
       <workItem from="1631128732933" duration="1181000" />
+      <workItem from="1631131867751" duration="886000" />
     </task>
     <servers />
   </component>
