@@ -5,6 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.project for class/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.project for class/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Lv1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Lv1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/scripts/enemyBeh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/enemyBeh.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scripts/trigEveBeha.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/trigEveBeha.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +27,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -67,6 +70,10 @@
       <workItem from="1631131867751" duration="886000" />
       <workItem from="1631133650388" duration="69000" />
       <workItem from="1631133747352" duration="3273000" />
+      <workItem from="1631137507988" duration="111000" />
+      <workItem from="1631137858570" duration="3629000" />
+      <workItem from="1631142112017" duration="4295000" />
+      <workItem from="1631150406740" duration="267000" />
     </task>
     <servers />
   </component>
@@ -89,6 +96,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>
