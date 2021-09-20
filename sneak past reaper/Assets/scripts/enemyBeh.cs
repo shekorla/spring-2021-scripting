@@ -34,7 +34,7 @@ public class enemyBeh : MonoBehaviour
 
     public void newDest()//check where you are, move to a random new loc near
     {
-        Debug.Log("wander");//enemy randomly wanders, change to follow set patrol route later
+        //Debug.Log("wander");//enemy randomly wanders, change to follow set patrol route later
         newX = (int) Random.Range(currentLoc.x - moveRange, currentLoc.x + moveRange);
         newZ = (int) Random.Range(currentLoc.z - moveRange, currentLoc.z + moveRange);
         location = new Vector3(newX, 0, newZ);
@@ -70,13 +70,13 @@ public class enemyBeh : MonoBehaviour
 
     public void foundYou(GameObject target)//see the player start following
     {
-        StopAllCoroutines();
+        StopCoroutine(lookForPlayer());
         hunt = true;
         StartCoroutine(followPlayer(target));
     }
     public void lostYou()//return to patrol once loose player
     {
-        StopAllCoroutines();
+        StopCoroutine(followPlayer(GameObject.FindGameObjectWithTag("Player")));
         hunt = false;
         patrol = false;
         agent.speed = maxspeed;
