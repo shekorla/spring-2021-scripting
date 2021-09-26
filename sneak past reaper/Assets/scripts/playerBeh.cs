@@ -7,6 +7,7 @@ public class playerBeh : MonoBehaviour
     public float speed = 1f, sound=5f;// sound is amt of noise player makes
     private float tempSpeed, tempSound;
     private Vector3 position;
+    private Quaternion rotation;
     private CharacterController controller;
     public UnityEvent sneakEv, runEv;
 
@@ -15,6 +16,7 @@ public class playerBeh : MonoBehaviour
         controller = GetComponent<CharacterController>();
         tempSpeed = speed;
         tempSound = sound;
+        rotation = controller.transform.rotation;
     }
 //slow down speed for sneaking
     public void swapSneak()
@@ -57,7 +59,9 @@ public class playerBeh : MonoBehaviour
     {
         position.x = tempSpeed * Input.GetAxis("Horizontal");
         position.z = tempSpeed * Input.GetAxis("Vertical");
+        rotation.y = rotation.y * Input.GetAxis("Vertical");
         controller.Move(position * Time.deltaTime);
+        controller.transform.rotation = rotation;
     }
 
 }

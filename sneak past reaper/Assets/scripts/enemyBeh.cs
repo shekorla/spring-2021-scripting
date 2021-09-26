@@ -59,7 +59,7 @@ public class enemyBeh : MonoBehaviour
 
     IEnumerator followPlayer(GameObject target)
     {
-        Debug.Log("folow");
+        //Debug.Log("Follow");
         while (hunt==true)
         {
             agent.speed = maxspeed * 1.5f;//move faster during hunt
