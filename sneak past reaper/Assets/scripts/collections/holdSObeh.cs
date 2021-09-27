@@ -1,9 +1,11 @@
+using UnityEditor;
 using UnityEngine;
 
-public class hoardingBehaviour : MonoBehaviour
+public class holdSObeh : MonoBehaviour
 {
     private GameObject art;
-    private MeshRenderer artMeshRenderer;
+    private Mesh artMesh;
+    private Material artColor;
     public collectableSO newShinyObj;
     public collectionSO inventory;
 
@@ -21,19 +23,19 @@ public class hoardingBehaviour : MonoBehaviour
     private void ConfigItem()
     {
         art = GetComponentInChildren<Transform>().gameObject;
-        artMeshRenderer = GetComponentInChildren<MeshRenderer>();
-        if (artMeshRenderer != null)
+        artMesh = GetComponentInChildren<Mesh>();
+        if (artMesh != null)
         {
-            artMeshRenderer = newShinyObj.skinProj;
-            artMeshRenderer.material = newShinyObj.skinColor;
+            artMesh = newShinyObj.skin;
+            artColor = newShinyObj.skinColor;
         }
         EnableDisableCollectable(!newShinyObj.collected);
     }
     
     private void OnTriggerEnter(Collider other)
     {
-        inventory.pickedUp(newShinyObj);
-        EnableDisableCollectable(false);
+            inventory.pickedUp(newShinyObj);
+            EnableDisableCollectable(false);
     }
 
     private void EnableDisableCollectable(bool value)

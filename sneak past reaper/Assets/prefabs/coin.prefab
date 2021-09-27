@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2963253516621712903}
   - component: {fileID: 5445349425009999583}
   - component: {fileID: 6225165020582062581}
+  - component: {fileID: 411146964555073379}
   m_Layer: 0
   m_Name: coin
   m_TagString: Untagged
@@ -138,3 +139,17 @@ MonoBehaviour:
   wallTrigEv:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &411146964555073379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3354773271272945971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b17f39486d266954c91600a9401cd993, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newShinyObj: {fileID: 11400000, guid: c01166a4adb1c3d40be66e6d14fa02d3, type: 2}
+  inventory: {fileID: 0}
