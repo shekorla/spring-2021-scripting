@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
@@ -7,6 +8,12 @@ public class collectionSO : ScriptableObject
 {
     public List<collectableSO> inventory;
     public float bank;
+
+    public void Awake()
+    {
+        empty();
+        bank = 0f;
+    }
 
     public void pickedUp(collectableSO prize)
     {

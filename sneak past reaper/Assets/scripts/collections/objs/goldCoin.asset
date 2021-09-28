@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a5d41f766921ef4594a5b5d53d6b58b, type: 3}
   m_Name: goldCoin
   m_EditorClassIdentifier: 
-  collected: 0
+  collected: 1
   costVal: 0
   sellVal: 0
   IIIDself: {fileID: 3354773271272945971, guid: 7bcb6740b870dd6408c3e398bee68b78, type: 3}
-  skinProj: {fileID: 0}
   skin: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
   skinColor: {fileID: 2100000, guid: 5bc871493deef31458ff882ff95d282c, type: 2}
   worth: 1

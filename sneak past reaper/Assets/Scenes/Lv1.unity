@@ -12008,14 +12008,14 @@ PrefabInstance:
     - target: {fileID: 6225165020582062581, guid: 7bcb6740b870dd6408c3e398bee68b78, type: 3}
       propertyPath: trigEntEv.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: d21283dbc6ff4fd41a91798e3fa20d0e, type: 2}
     - target: {fileID: 6225165020582062581, guid: 7bcb6740b870dd6408c3e398bee68b78, type: 3}
       propertyPath: trigEntEv.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6225165020582062581, guid: 7bcb6740b870dd6408c3e398bee68b78, type: 3}
       propertyPath: trigEntEv.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: pickedUp
+      value: profit
       objectReference: {fileID: 0}
     - target: {fileID: 6225165020582062581, guid: 7bcb6740b870dd6408c3e398bee68b78, type: 3}
       propertyPath: trigEntEv.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -12027,7 +12027,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: c01166a4adb1c3d40be66e6d14fa02d3, type: 2}
     - target: {fileID: 6225165020582062581, guid: 7bcb6740b870dd6408c3e398bee68b78, type: 3}
       propertyPath: trigEntEv.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: collectableSO, Assembly-CSharp
+      value: moneySO, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bcb6740b870dd6408c3e398bee68b78, type: 3}

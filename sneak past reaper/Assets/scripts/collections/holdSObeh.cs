@@ -23,7 +23,7 @@ public class holdSObeh : MonoBehaviour
     private void ConfigItem()
     {
         art = GetComponentInChildren<Transform>().gameObject;
-        artMesh = GetComponentInChildren<Mesh>();
+        artMesh = GetComponentInChildren<MeshFilter>().mesh;
         if (artMesh != null)
         {
             artMesh = newShinyObj.skin;
