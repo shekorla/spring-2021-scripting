@@ -8,10 +8,8 @@ public class brickBuilder : MonoBehaviour
 {
     public int brickCount=0, score,level=0, rowNum=1,colNum=1;
     public GameObject[] listOfBricks;
-
-
-   //where to put bricks x1=1 , x2= 3.65, x3= 6.3, x4= 9, yoffset= 1,ystart=17;
-
+    public GameObject player;
+    
     private void Start()
     {
         listOfBricks = Resources.LoadAll<GameObject>("BrickTypes");
@@ -59,11 +57,11 @@ public class brickBuilder : MonoBehaviour
     public void whereSpawn(int colNum,int rowNum)
     {
         var loc = new Vector3(0, 0, 0);
-        if (colNum==4) { loc.x = 9; }
-        if (colNum==3) { loc.x = (float) 6.3; }
-        if (colNum==2) { loc.x = (float) 3.65; }
-        if (colNum==1) { loc.x = 1; }
-        loc.y = (17 - (rowNum * 1));
+        if (colNum==4) { loc.x = (float) 7.1; }
+        if (colNum==3) { loc.x = (float) 5.7; }
+        if (colNum==2) { loc.x = (float) 4.3; }
+        if (colNum==1) { loc.x = (float) 2.9; }
+        loc.y = (float) (13.25 - (rowNum * 1));
         makeOneBrick(loc);
     }
 
@@ -71,9 +69,11 @@ public class brickBuilder : MonoBehaviour
     {
         if (brickCount <= 0)
         {
-            new WaitForSecondsRealtime(2);
-            level++;
-            BuildBricks(level);
+            if (player.transform.position.y<=6)
+            {
+                level++;
+                BuildBricks(level);
+            }
         }
     }
 }

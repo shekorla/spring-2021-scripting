@@ -6,14 +6,13 @@ public class paddle : MonoBehaviour
 {
     float mousePos;
     double offset=3;
+    private Vector3 paddlePos;
+    public static bool simulateMouseWithTouches = true;
     //bool upgrade = false;
-
-    // Update is called once per frame
     void Update()
     {
         mousePos = Input.mousePosition.x / Screen.width * 16;
-        Vector3 paddlePos = new Vector3((float) (mousePos-offset), this.transform.position.y, 0f);
-
+        paddlePos = new Vector3((float) (mousePos-offset), this.transform.position.y, 0f);
         this.transform.position = paddlePos;
     }
 
@@ -26,4 +25,5 @@ public class paddle : MonoBehaviour
         }
 
     }
+    
 }
